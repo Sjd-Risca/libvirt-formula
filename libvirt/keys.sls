@@ -2,6 +2,8 @@
 include:
   - .config
 
+#{{ salt_version[0] }}
+#{{ salt_version[1] }}
 libvirt.keys:
 # API changes with version 2016.3.0
 {%- if salt_version[0]|int < 2016 %}
